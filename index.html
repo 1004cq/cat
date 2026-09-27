@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>DJY 逗猫球</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>DJY 逗猫球</h1>
+        <p>按住小球拖出去松开，小猫会捡回来</p>
+      </div>
+      <div class="score">捡回 <b id="score">0</b></div>
+    </header>
+    <div class="stage">
+      <canvas id="game"></canvas>
+      <div class="loading" id="loading">草地加载中…</div>
+    </div>
+    <p class="hint" id="hint">按住粉色小球，往草地上甩～</p>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
