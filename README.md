@@ -1,20 +1,20 @@
 # cat
 
-DJY 逗猫球 — a cute white cat fetches a pink ball on grass.
-
-Made for [djy.baby](https://djy.baby).
+A small browser game: throw a pink ball, a white cat fetches it.
 
 ## Play
 
-Drag the pink ball and release. The cat runs, picks it up, and brings it back.
+Drag the ball and release. The cat runs, picks it up, and brings it back.
 
-Open `index.html` over **http** (GitHub Pages or any static host). `file://` will not load Three.js modules.
+Serve the folder over http. Opening as a local file will not load the 3D module.
 
 ## Files
 
-- `index.html` `style.css` `game.js`
-- `grass.jpg` `cat.jpg` — put these next to the HTML (from the game folder)
+- `index.html`
+- `style.css`
+- `game.js`
+- `grass.jpg` and `cat.jpg` in the same folder as the HTML
 
 ## Stack
 
-Three.js (WebGL) + fixed-timestep ball physics.
+Three.js (WebGL) and a fixed-timestep ball simulation.
